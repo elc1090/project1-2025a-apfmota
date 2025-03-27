@@ -1,0 +1,101 @@
+header {
+  background-color: #171d25;
+  padding: 10px 20%;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+	
+}
+
+.flex.right {
+  justify-content: flex-end;
+}
+
+.download-login span {
+  padding: 12px;
+  color: #b8b6b4;
+}
+
+.download-login span.split {
+  padding: 0;
+}
+
+.download-login span:hover {
+  color: #ffffff;
+}
+
+.download-login {
+  font-size: 11px;
+}
+
+
+.download {
+  background-color: #5C7E10;
+  padding: 7px 18px 7px 24px;
+  background-image: url(https://store.fastly.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  color: #e5e4dc;
+}
+
+.download:hover {
+  background-color: #83ac2b;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+body {
+	margin: 0;
+}
+
+menu {
+  color: #dcdedf;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+menu section {
+  padding: 7px 5px 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+menu section.selected {
+  color: #1a9fff;
+  border-bottom: 3px solid #1a9fff;
+}
+
+menu section.selected:hover {
+  color: #1a9fff;
+}
+
+menu section:hover {
+  color: #ffffff;
+}
+
+#Logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#Menu {
+  width: 100%;
+  margin: auto;
+}

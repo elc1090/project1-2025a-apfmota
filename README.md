@@ -16,18 +16,16 @@ Acesso: Substitua este texto pela URL para acesso ao site publicado
 
 
 #### Desenvolvedor(a)
-Substitua este texto pela sua identificação: nome e curso
+Andriel Prieto Fernandes Mota - Ciência da Computação
 
 #### Cliente
-Substitua este texto pela identificação do cliente
-
-
-
+Murilo Leal
 
 #### Site/app original
+Loja Steam
 
 ##### Link
-Substitua este texto pela URL do site/app escolhido
+https://store.steampowered.com/
 
 ##### Descrição
 Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
