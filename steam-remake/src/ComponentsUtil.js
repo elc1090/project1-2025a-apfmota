@@ -19,3 +19,12 @@ export const DropDownItem = ({title}) => {
         <div className='item'>{title}</div>
     )
 }
+
+export const LeftSection = ({title, children, background = null}) => {
+    return (
+        <section className='left-section' style={{background: background}}>
+            <section className='title'>{title}</section>
+            {children}
+        </section>
+    )
+}

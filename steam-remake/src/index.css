@@ -120,3 +120,64 @@ menu .dropDown .item:hover {
   width: 100%;
   margin: auto;
 }
+
+main {
+  background: radial-gradient(circle, rgba(25,52,69,1) 18%, rgba(24,67,82,1) 46%, rgba(30,55,87,1) 78%, rgba(32,50,83,1) 99%);
+  display: flex;
+  padding: 20px 6%;
+}
+
+#gift-card-section div {
+  margin: 3px 0;
+  text-transform: uppercase;
+  color: #88bde9;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+#gift-card-section div:hover {
+  color: white;
+}
+
+#gift-card-section span {
+  color: #a4b3c4;
+  font-weight: 550;
+  font-size: 12px;
+}
+
+#gift-card-section img {
+  width: 80%;
+}
+
+#recently-viewed {
+  background: radial-gradient(circle at 0%, rgba(83,111,134,0) 20%, rgba(83,111,134,0.25) 100%);
+}
+
+#left-sections {
+  width: 15%;
+  font-family: "Motiva Sans", Sans-serif;
+}
+
+.left-section .title {
+  color: #536f86;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.left-section {
+  margin-top: 20px;
+  padding: 15px 0;
+}
+
+.left-section div {
+  color: #7A8B9D;
+  font-size: 12px;
+  font-weight: 550;
+  margin-top: 4px;
+}
+
+.left-section div:hover {
+  color: #54a5d4;
+}
