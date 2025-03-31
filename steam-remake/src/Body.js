@@ -1,4 +1,4 @@
-import { LeftSection } from "./ComponentsUtil"
+import { HighlightedGame, LeftSection, MainContent, MainMenu, SlidingPanel } from "./ComponentsUtil"
 
 export const SteamBody = () => {
     return (
@@ -40,6 +40,15 @@ export const SteamBody = () => {
                     <div>RPG</div>
                     <div>Simulação</div>
                 </LeftSection>
+            </section>
+            <section id="main-section">
+                <MainMenu/>
+                <MainContent title={"Destaques e recomendados"}>
+                    <SlidingPanel>
+                        <HighlightedGame gameId={"MonterHunterWilds"}/>
+                        <HighlightedGame gameId={"SplitFiction"}/>
+                    </SlidingPanel>
+                </MainContent>
             </section>
         </main>
     )

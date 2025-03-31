@@ -124,7 +124,8 @@ menu .dropDown .item:hover {
 main {
   background: radial-gradient(circle, rgba(25,52,69,1) 18%, rgba(24,67,82,1) 46%, rgba(30,55,87,1) 78%, rgba(32,50,83,1) 99%);
   display: flex;
-  padding: 20px 6%;
+  padding: 20px 2%;
+  font-family: "Motiva Sans", Sans-serif;
 }
 
 #gift-card-section div {
@@ -155,7 +156,6 @@ main {
 
 #left-sections {
   width: 15%;
-  font-family: "Motiva Sans", Sans-serif;
 }
 
 .left-section .title {
@@ -180,4 +180,160 @@ main {
 
 .left-section div:hover {
   color: #54a5d4;
+}
+
+#main-section {
+  width: 70%;
+  margin-left: 60px;
+}
+
+#main-menu {
+  margin-top: 20px;
+  display: flex;
+  background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+}
+
+#main-menu > div:hover {
+  background: linear-gradient(90deg, #245FA3 60%, rgba(58, 120, 177, 0.8) 100%);
+}
+
+#main-menu > div {
+  color: #e5e5e5;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+#main-menu > div.small-padding {
+  padding: 3px;
+}
+
+input.search-input {
+  padding: 2px 10px;
+  border: none;
+  height: 18;
+  background-color: transparent;
+}
+
+input.search-input::placeholder {
+  font-style: italic;
+  color: #0e1c25;
+  font-weight: lighter;
+}
+
+.filler {
+  flex-grow: 1;
+}
+
+#main-menu div.no-hover-background:hover {
+  background: unset;
+}
+
+#main-menu .search-container {
+  padding: 3px;
+  display: flex;
+  background-color: #316282;
+  border-radius: 3px;
+}
+
+.main-content > div.title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 30px 0px 10px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  padding-top: 2px;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.sliding-panel .panels {
+  display: flex;
+}
+
+.highlighted-game {
+  display: flex;
+  background-color: #0e1821;
+  color: #ffffff;
+}
+
+.highlighted-game .screenshots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.highlighted-game .screenshots > div {
+  width: 45%;
+  padding: 3px;
+}
+
+.highlighted-game .title {
+  margin: 20px 10px;
+  font-size: 24px;
+}
+
+.highlighted-game .status {
+  margin: 10px;
+  font-size: 21px;
+}
+
+.highlighted-game > div {
+  padding-right: 5px;
+}
+
+.highlighted-game .tag {
+  font-size: 12px;
+  background-color: #394148;
+  margin-left: 10px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.highlighted-game .price {
+  font-size: 11px;
+  margin: 10px;
+}
+
+.sliding-panel .slide-left-button {
+  background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+  height: 100px;
+  padding: 10px;
+  align-self: center;
+}
+
+.sliding-panel .slide-left-button:hover {
+  background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+}
+
+.sliding-panel .slide-left-button > div {
+  background-image: url(https://store.fastly.steamstatic.com/public/images/v6/arrows.png);
+  background-repeat: no-repeat;
+  background-position-x: -23px;
+  width: 23px;
+  height: 100px;
+  background-position-y: center;
+} 
+
+.sliding-panel .slide-right-button {
+  background: linear-gradient( to left, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+  align-self: center;
+  height: 100px;
+  padding: 10px
+}
+
+.sliding-panel .slide-right-button:hover {
+  background: linear-gradient( to left, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+}
+
+.sliding-panel .slide-right-button > div {
+  background-image: url(https://store.fastly.steamstatic.com/public/images/v6/arrows.png);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  width: 23px;
+  height: 100px;
+  background-position-y: center;
 }
