@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project1-2025a-apfmota/static/css/main.9834a9af.css",
-    "main.js": "/project1-2025a-apfmota/static/js/main.223f64af.js",
-    "static/js/453.4d444e62.chunk.js": "/project1-2025a-apfmota/static/js/453.4d444e62.chunk.js",
-    "index.html": "/project1-2025a-apfmota/index.html",
-    "main.9834a9af.css.map": "/project1-2025a-apfmota/static/css/main.9834a9af.css.map",
-    "main.223f64af.js.map": "/project1-2025a-apfmota/static/js/main.223f64af.js.map",
-    "453.4d444e62.chunk.js.map": "/project1-2025a-apfmota/static/js/453.4d444e62.chunk.js.map"
+    "main.css": "/project1-2025a-apfmota/steam-remake/static/css/main.9834a9af.css",
+    "main.js": "/project1-2025a-apfmota/steam-remake/static/js/main.bd21fabe.js",
+    "static/js/453.4d444e62.chunk.js": "/project1-2025a-apfmota/steam-remake/static/js/453.4d444e62.chunk.js",
+    "index.html": "/project1-2025a-apfmota/steam-remake/index.html",
+    "main.9834a9af.css.map": "/project1-2025a-apfmota/steam-remake/static/css/main.9834a9af.css.map",
+    "main.bd21fabe.js.map": "/project1-2025a-apfmota/steam-remake/static/js/main.bd21fabe.js.map",
+    "453.4d444e62.chunk.js.map": "/project1-2025a-apfmota/steam-remake/static/js/453.4d444e62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9834a9af.css",
-    "static/js/main.223f64af.js"
+    "static/js/main.bd21fabe.js"
   ]
 }
