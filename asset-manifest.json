@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project1-2025a-apfmota/steam-remake/static/css/main.9834a9af.css",
-    "main.js": "/project1-2025a-apfmota/steam-remake/static/js/main.bd21fabe.js",
+    "main.css": "/project1-2025a-apfmota/steam-remake/static/css/main.5e74828a.css",
+    "main.js": "/project1-2025a-apfmota/steam-remake/static/js/main.f746b5da.js",
     "static/js/453.4d444e62.chunk.js": "/project1-2025a-apfmota/steam-remake/static/js/453.4d444e62.chunk.js",
     "index.html": "/project1-2025a-apfmota/steam-remake/index.html",
-    "main.9834a9af.css.map": "/project1-2025a-apfmota/steam-remake/static/css/main.9834a9af.css.map",
-    "main.bd21fabe.js.map": "/project1-2025a-apfmota/steam-remake/static/js/main.bd21fabe.js.map",
+    "main.5e74828a.css.map": "/project1-2025a-apfmota/steam-remake/static/css/main.5e74828a.css.map",
+    "main.f746b5da.js.map": "/project1-2025a-apfmota/steam-remake/static/js/main.f746b5da.js.map",
     "453.4d444e62.chunk.js.map": "/project1-2025a-apfmota/steam-remake/static/js/453.4d444e62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9834a9af.css",
-    "static/js/main.bd21fabe.js"
+    "static/css/main.5e74828a.css",
+    "static/js/main.f746b5da.js"
   ]
 }
