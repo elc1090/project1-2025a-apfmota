@@ -1,10 +1,10 @@
-import React, { Children, useState } from 'react'
-import { GameDetails } from './GameDetails'
+import React, { Children, useEffect, useState } from 'react'
+import { GameDetails } from './GameDetailsFile'
 
 export const HeaderMenu = ({title, selected, children}) => {
 
     const [active, setActive] = useState(false)
-
+    
     return (
         <section onMouseOver={() => {setActive(true)}} onMouseOut={() => {setActive(false)}} className={selected ? 'selected' : ''}>
             {title}
@@ -61,7 +61,7 @@ export const MainContent = ({title, children}) => {
     )
 }
 
-export const SlidingPanel = ({children}) => {
+export const SlidingPanel = ({children, highlightedButtonIndex, higlightStyle}) => {
 
     const [currentPanel, setCurrentPanel] = useState(0)
 
@@ -88,15 +88,48 @@ export const SlidingPanel = ({children}) => {
                 {React.cloneElement(children[currentPanel], { key: currentPanel })}
                 <div className='slide-right-button' onClick={nextPanel}><div></div></div>
             </div>
-            <div className='bottom'></div>
+            <div className='bottom flex'>
+                {children.map((child, index) => (
+                    <div style={highlightedButtonIndex == index ? higlightStyle : {}} onClick={() => setCurrentPanel(index)} className={"selecting-button " + (index == currentPanel ? 'selected' : '')}></div>
+                ))}
+            </div>
         </section>
     )
 
 }
 
-export const HighlightedGame = ({gameId}) => {
+export const HighlightedGame = ({gameId, onSale, saleLeftTime}) => {
 
     const [mainImage, setMainImage] = useState(GameDetails[gameId].cover)
+    const [leftTime, setLeftTime] = useState(saleLeftTime());
+    const [saleOver, setSaleOver] = useState(false);
+
+    const formatedMiliseconds = () => {
+        const minutes = parseInt(leftTime / 60 / 1000);
+        const seconds = parseInt((leftTime - (minutes * 60 * 1000)) / 1000); 
+        return minutes + ":" + (seconds >= 10 ? seconds : "0" + seconds); 
+    }
+
+    const updatedLeftTime = () => {
+        const updatedLeftTime = saleLeftTime();
+        setLeftTime(updatedLeftTime);
+        if (updatedLeftTime < 0) {
+            setSaleOver(true);
+        }
+
+    }
+
+    const getOriginalPrice = () => {
+        return `R$ ${GameDetails[gameId].price.toFixed(2).replace(".", ",")}`;
+    }
+
+    const getSalePrice = () => {
+        return `R$ ${(GameDetails[gameId].price * 0.3).toFixed(2).replace(".", ",")}`;
+    }
+
+    useEffect(() => {
+        setInterval(updatedLeftTime, 1000);
+    }, [])
 
     return (
         <section className='highlighted-game'>
@@ -118,7 +151,26 @@ export const HighlightedGame = ({gameId}) => {
                     <section className='status'>{GameDetails[gameId].status}</section>
                     <div className='tag'>Popular</div>
                 </div>
-                <section className='price'>R$ {GameDetails[gameId].price}</section>
+                <section className='price'>
+                    <div className={"original " + ((onSale && !saleOver) ? 'sale' : '')}>{getOriginalPrice()}</div>
+                    {onSale &&
+                        <div className='sale-window'>
+                            {(!saleOver) &&          
+                                <section className='sale-container'>
+                                    <div className='title'>Promoção por tempo limitado!</div>
+                                    <div>70% de desconto se você comprar em: <span className='time'>{formatedMiliseconds()}</span></div>
+                                    <div className='sale-price'>{getSalePrice()}</div>
+                                </section>
+                            }
+                            {saleOver &&
+                                <section className='sale-container'>
+                                    <div className='title'>Promoção encerrada <span className='sad-face'>:(</span></div>
+                                    <div>O tempo esgotou e o produto voltou ao preço original</div>
+                                </section>
+                            }
+                        </div>
+                    }    
+                </section>
             </div>
         </section>
     )
